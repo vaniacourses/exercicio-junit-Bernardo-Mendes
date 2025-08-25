@@ -54,8 +54,20 @@ public class CalculadoraTest {
 
 	@Test
 	public void comparaIgual() {
-		int retorno = calc.compara();
-		Assertions.assertEquals(false, naoEhPositivo);
+		int retorno = calc.compara(2, 2);
+		Assertions.assertEquals(0, retorno);
+	}
+
+	@Test
+	public void comparaMaior() {
+		int retorno = calc.compara(2, 1);
+		Assertions.assertEquals(1, retorno);
+	}
+
+	@Test
+	public void comparaMenor() {
+		int retorno = calc.compara(1, 2);
+		Assertions.assertEquals(-1, retorno);
 	}
 
 	@Test
