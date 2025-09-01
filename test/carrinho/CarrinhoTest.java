@@ -19,7 +19,6 @@ public class CarrinhoTest{
     private Carrinho car;
     private Produto p1;
     private Produto p2;
-    private static Integer i;
 
 
     @BeforeEach
